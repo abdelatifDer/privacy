@@ -1,38 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 .App {
-  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.privacy-navbar {
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.privacy-navbar .link {
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 40px;
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.privacy-navbar .link.active {
+  color: rgb(43, 124, 116);
+  text-decoration: underline;
+}
+
+.heading-1 {
+  margin-bottom: 30px;
+}
+
+.heading-1,
+.heading-2,
+.heading-3 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(64, 83, 100);
+}
+
+.heading-2 {
+  font-size: 25px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.heading-3 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.paragraph,
+.paragraph a {
+  color: rgb(64, 83, 100);
+}
+
+.paragraph a {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.list {
+  margin-left: 30px;
+}
+
+.privacy-table {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+}
+
+.privacy-table .row {
+  display: flex;
+}
+
+.privacy-table .row.header {
+  font-weight: bold;
+}
+
+.privacy-table .row .col {
+  background-color: #f3f3f3;
+  color: rgb(96, 94, 94);
+  border: 1px solid #c0c0bf;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.privacy-table .row.header .col {
+  font-size: 16px;
+  background-color: #fff;
+  color: #605e5e;
+  min-height: 75px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  white-space: break-spaces;
+  word-break: break-word;
 }
 
-.App-link {
-  color: #61dafb;
+.privacy-table .row .col:first-of-type {
+  width: 325px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.privacy-table .row .col:nth-of-type(2) {
+  width: 451px;
+}
+
+.privacy-table .row .col:nth-of-type(3) {
+  width: 204px;
+}
+
+.privacy-table .row .col span {
+  font-weight: 700;
+}
+
+.privacy-table .row .col a {
+  color: #605e5e;
 }
