@@ -142,3 +142,9 @@ html {
 .privacy-table .row .col a {
   color: #605e5e;
 }
+
+@media (max-width: 917px) {
+  .privacy-table .row .col {
+    width: calc(100% / 3) !important;
+  }
+}
