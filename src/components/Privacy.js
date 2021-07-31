@@ -1,17 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const variants = {
-  initial: {
-    opacity: 0,
-  },
-  in: {
-    opacity: 1,
-  },
-  out: {
-    opacity: 0,
-  },
-};
+import { variants } from "../variants";
 
 const Privacy = () => {
   return (
